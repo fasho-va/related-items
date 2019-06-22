@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParcer = require('body-parser');
 const cors = require('cors');
-const PORT = 3005;
+const PORT =  process.env.PORT || 3005;
 const { getItemByUuid, getItemsByCategory, getRandomItems } = require('../db/index.js');
 
 const app = express();
